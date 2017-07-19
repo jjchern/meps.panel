@@ -1,0 +1,15 @@
+Package: meps.panel
+Title: MEPS Two-Year Longitudinal Files
+Version: 0.0.1
+Authors@R: c(person("JJ", "Chen", , "jiajia.chern@gmail.com", c("aut", "cre")))
+Description: Contains the two-year panel files from the 
+    Medical Expenditure Panel Survey (MEPS) Household Component (HC). All 
+    variable labels and value labels are included.
+Depends: R (>= 3.1.0)
+License: CC0
+Encoding: UTF-8
+LazyData: true
+URL: https://github.com/jjchern/meps.panel
+BugReports: https://github.com/jjchern/meps.panel/issues
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 6.0.1.9000
