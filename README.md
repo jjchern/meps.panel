@@ -3,11 +3,11 @@
 About `meps.panel`
 ==================
 
-[![Travis-CI Build Status](https://travis-ci.org/jjchern/meps.panel.svg?branch=master)](https://travis-ci.org/jjchern/meps.panel)
+[![Travis-CI Build Status](https://travis-ci.org/jjchern/meps.panel.svg?branch=master)](https://travis-ci.org/jjchern/meps.panel) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jjchern/meps.panel?branch=master&svg=true)](https://ci.appveyor.com/project/jjchern/meps.panel) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/meps.panel)](https://cran.r-project.org/package=meps.panel)
 
 The goal of `meps.panel` is to wrap the two-year panel files from the Medical Expenditure Panel Survey (`meps`) Household Component (HC) in an R data package. All variable labels and value labels are included.
 
-For more information about the consolidated MEPS-HC files, see [the AHRQ webpages](https://meps.ahrq.gov/mepsweb/data_stats/download_data_files_results.jsp?cboDataYear=All&cboDataTypeY=1%2CHousehold+Full+Year+File&buttonYearandDataType=Search&cboPufNumber=All&SearchTitle=Consolidated+Data), or the example code from the [`HHS-AHRQ/MEPS` repo](https://github.com/HHS-AHRQ/MEPS) by [`@e-mitchell`](https://github.com/e-mitchell).
+For more information about the consolidated MEPS-HC panel files, see [the AHRQ webpages](https://meps.ahrq.gov/mepsweb/data_stats/download_data_files_results.jsp?cboDataYear=All&cboDataTypeY=1%2CHousehold+Full+Year+File&buttonYearandDataType=Search&cboPufNumber=All&SearchTitle=Longitudinal), or the example code from the [`HHS-AHRQ/MEPS` repo](https://github.com/HHS-AHRQ/MEPS) by [`@e-mitchell`](https://github.com/e-mitchell).
 
 For another attempt of downloading the MEPS data, see [the `ajdamico/asdfree` repo](https://github.com/ajdamico/asdfree/tree/master/Medical%20Expenditure%20Panel%20Survey) by [`@ajdamico`](https://github.com/ajdamico).
 
@@ -37,7 +37,6 @@ Usage
 ``` r
 # Load tibble for better printout
 library(tibble)
-#> Warning: package 'tibble' was built under R version 3.3.2
 
 meps.panel::f2013_14
 #> # A tibble: 16,714 x 3,454
