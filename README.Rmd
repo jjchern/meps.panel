@@ -14,6 +14,10 @@ knitr::opts_chunk$set(
 
 # About `meps.panel`
 
+[![Travis-CI Build Status](https://travis-ci.org/jjchern/meps.panel.svg?branch=master)](https://travis-ci.org/jjchern/meps.panel)
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/jjchern/meps.panel?branch=master&svg=true)](https://ci.appveyor.com/project/jjchern/meps.panel)
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/meps.panel)](https://cran.r-project.org/package=meps.panel)
+
 The goal of `meps.panel` is to wrap the two-year panel files from the 
 Medical Expenditure Panel Survey (`meps`) Household Component (HC) in an R 
 data package. All variable labels and value labels are included.
@@ -26,10 +30,11 @@ Currently the package includes data from panel 16 (2011-2012), panel 17
 (year 2012-2013), and panel 18 (year 2013-2014). The rest of the panel files 
 will be packaged soon.
 
-# Related R data packages:
+# All MEPS-Related R data packages:
 
 - Full Year Consolidated Files: [`meps.hc`](https://github.com/jjchern/meps.hc)
 - Person Round Plan Files: [`meps.prpl`](https://github.com/jjchern/meps.prpl)
+- Two-Years Longitudinal Files: [`meps.panel`](https://github.com/jjchern/meps.panel)
 
 # Installation
 
@@ -40,3 +45,13 @@ devtools::install_github("jjchern/meps.panel")
 # To uninstall the package, use:
 # remove.packages("meps.panel")
 ```
+
+# Usage
+
+```{r}
+# Load tibble for better printout
+library(tibble)
+
+meps.panel::f2013_14
+```
+
