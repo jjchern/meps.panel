@@ -88,12 +88,12 @@ extract_val_la = . %>%
 ## Assign value labels
 extract_val_la(spu) -> val_labels(f2013_14)
 
-## Convert all the labelled vectors into factors
-as_factor(f2013_14) -> f2013_14
+## Don't Convert all the labelled vectors into factors
+## as_factor(f2013_14) -> f2013_14
 
 ## Print and save
 f2013_14
-use_data(f2013_14)
+use_data(f2013_14, overwrite = TRUE)
 
 # 2012-2013 --------------------------------------------------------------------
 
@@ -127,12 +127,12 @@ extract_var_la(spu) -> var_label(f2012_13)
 ## Assign value labels
 extract_val_la(spu) -> val_labels(f2012_13)
 
-## Convert all the labelled vectors into factors
-as_factor(f2012_13) -> f2012_13
+## Don't Convert all the labelled vectors into factors
+## as_factor(f2012_13) -> f2012_13
 
 ## Print and save
 f2012_13
-use_data(f2012_13)
+use_data(f2012_13, overwrite = TRUE)
 
 # 2011-2012 --------------------------------------------------------------------
 
@@ -166,13 +166,12 @@ extract_var_la(spu) -> var_label(f2011_12)
 ## Assign value labels
 extract_val_la(spu) -> val_labels(f2011_12)
 
-## Convert all the labelled vectors into factors
-as_factor(f2011_12) -> f2011_12
+## Don't Convert all the labelled vectors into factors
+## as_factor(f2011_12) -> f2011_12
 
 ## Print and save
 f2011_12
-use_data(f2011_12)
-
+use_data(f2011_12, overwrite = TRUE)
 
 # Delete raw ssp files ----------------------------------------------------
 

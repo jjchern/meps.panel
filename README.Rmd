@@ -1,16 +1,22 @@
 ---
-output: github_document
+output: 
+  github_document:
+    toc: yes
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, echo = FALSE}
+statapath = "/Applications/Stata/StataMP.app/Contents/MacOS/Stata-MP"
+
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-",
+  comment = "",
+  fig.path = "README-files/",
   message = FALSE,
-  warning = FALSE
+  warning = FALSE,
+  cache = TRUE,
+  engine.path = statapath
 )
 ```
 
@@ -48,12 +54,5 @@ devtools::install_github("jjchern/meps.panel")
 # remove.packages("meps.panel")
 ```
 
-# Usage
 
-```{r}
-# Load tibble for better printout
-library(tibble)
-
-meps.panel::f2013_14
-```
 
